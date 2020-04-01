@@ -9,4 +9,6 @@ public interface CustomerService {
 	public PageInfo<Customer> findAll(CusDto cusDto);
 	 // 新增顾客信息
 	public boolean addCus(Customer customer);
+	//根据用户id删除信息
+	public boolean deletCus(Integer cusId);
 }

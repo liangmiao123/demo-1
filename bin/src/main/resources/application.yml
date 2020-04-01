@@ -1,0 +1,18 @@
+#配置视图解析器
+spring:
+  mvc:
+    view: 
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+      
+  datasource:
+    url: jdbc:mysql://localhost:3306/mybatis?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+    
+#---mybatis配置
+mybatis: 
+  config-location: classpath:mybatis/mybatis.xml
+  

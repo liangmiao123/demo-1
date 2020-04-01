@@ -44,4 +44,9 @@ public class CustomerServiceImpl implements CustomerService {
 		return this.custDao.insert(customer) > 0 ? true : false;
 	}
 
+	@Override
+	public boolean deletCus(Integer cusId) {
+		return this.custDao.deleteByPrimaryKey(cusId)>0 ?true :false;
+	}
+
 }
